@@ -1,0 +1,126 @@
+/*Eliminamos los margenes y paddings que agrega el navegador por defecto*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+pag-princ {
+  padding-top: 50px;
+}
+
+/*Agregamos margenes inferiores a los parrafos*/
+p {
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: fantasy, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 80px;
+  font-family: fantasy, sans-serif;
+}
+
+container {
+  margin-top: 80px
+}
+
+.Home {
+  margin-top: 60px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: orange;
+  font-size: 60px;
+}
+
+footer {
+  background: black;
+  color: white;
+}
+
+nav {
+  float: left; /* Desplazamos el nav hacia la izquierda */
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+}
+
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+}
+
+nav ul li a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background: orange;
+}
+
+.navbar-nav {
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  align-items: left;
+  justify-content: left;
+}
+
+/* Estilo para la tabla completa */
+.table-style {
+  width: 100%; /* Ancho completo */ 
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 3px solid black; /*  Borde */
+
+}
+
+/* Estilo para las cabeceras de la tabla */
+.table-style th {
+  background-color: orange; /* Color de fondo */
+  font-weight: bold; /* Texto en negrita */
+  padding: 10px; /* Espaciado interno */
+  text-align: left; /* Alineación del texto */
+  border: 1px solid black; /*  Borde */
+}
+
+/* Estilo para las celdas de la tabla */
+.table-style td {
+  padding: 10px; /* Espaciado interno */
+  border: 1px solid black; /* Borde */
+  text-align: left; /* Alineación del texto */
+}
+
+/* Estilo para las filas pares (zebra striping) */
+.table-style tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Estilo para las filas al pasar el ratón */
+.table-style tr:hover {
+  background-color: #f1f1f1;
+}
+
